@@ -1,4 +1,12 @@
-h1{
-    color: blue;
-    
+h1 {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+#big_purple {
+  font-size: 500%;
+  color: purple;
 }
