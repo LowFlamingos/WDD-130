@@ -1,19 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto&display=swap");
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 nav a {
   text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 .button-box {
   text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 main section {
   text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 #background {
@@ -23,6 +30,11 @@ main section {
 
 body {
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
 }
 header {
   background-color: #aabd8c;
@@ -30,6 +42,7 @@ header {
 nav a {
   color: #154467;
   text-decoration: none;
+  padding: 35px;
 }
 nav a:hover {
   background-color: #fce172;
@@ -40,6 +53,11 @@ nav a:hover {
   background-color: #aabd8c;
   color: #154467;
   text-decoration: none;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .book:hover,
 .join:hover {
@@ -48,21 +66,32 @@ nav a:hover {
 }
 .msg {
   background-color: #aabd8c;
+  line-height: 1.5em;
+  padding: 35px;
 }
 footer {
   background-color: #aabd8c;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 .home-title {
   color: #154467;
+  font-family: Nunito, Helvetica, sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
 }
 h4 {
   color: #154467;
 }
 .msg h2 {
   color: #154467;
+  font-family: Nunito, Helvetica, sans-serif;
 }
 .msg p {
   color: #154467;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding-bottom: 15px;
 }
 #footer-top-line {
   color: #154467;
@@ -80,11 +109,33 @@ footer p {
 footer p a:hover {
   text-decoration: underline;
 }
-
+footer .social img {
+  padding-top: 15px;
+}
 .logo,
 .icon {
   width: 80px;
 }
 #hero-img {
   width: 100%;
+}
+#logo_link {
+  padding-top: 5px;
+}
+.icon {
+  padding-top: 10px;
+}
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+.card-img {
+  border: 10px solid #154467;
+}
+main section img {
+  box-sizing: border-box;
+}
+.mountains {
+  margin: 20px 0;
 }
