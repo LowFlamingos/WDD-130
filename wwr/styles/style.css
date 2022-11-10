@@ -34,6 +34,7 @@ body {
 }
 h2 {
   margin: 0;
+  text-decoration: none;
 }
 header {
   background-color: #aabd8c;
@@ -43,6 +44,7 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
+  z-index: 1;
 }
 nav a {
   text-align: center;
@@ -187,6 +189,13 @@ main section img {
 .rivers-card {
   grid-column: 2/4;
 }
+.rivers-card a {
+  text-decoration: none;
+  color: black;
+}
+.rivers-card h2 {
+  padding-top: 5px;
+}
 .camping-card {
   grid-column: 5/7;
 }
@@ -194,6 +203,74 @@ main section img {
   grid-column: 8/10;
 }
 
+/* Rivers CSS */
+
+.rivers-title {
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 150px;
+}
+.rivers {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 75px auto 75px auto 75px auto;
+}
+.rivers h2 {
+  color: #154467;
+  font-family: Nunito, Helvetica, sans-serif;
+}
+.rivers p {
+  color: #154467;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding-bottom: 15px;
+}
+.river1,
+.river2,
+.river3 {
+  background-color: #aabd8c;
+  line-height: 1.5em;
+  padding: 35px;
+  box-shadow: 5px 5px 10px #6f7364;
+  border-radius: 25px;
+}
+.river1 {
+  grid-column: 2/7;
+  grid-row: 2/3;
+}
+.river2 {
+  grid-column: 5/10;
+  grid-row: 4/5;
+}
+.river3 {
+  grid-column: 2/7;
+  grid-row: 6/7;
+}
+.img1,
+.img2,
+.img3 {
+  max-width: 75%;
+  max-height: 75%;
+  border-radius: 25px;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.img1 {
+  grid-column: 7/11;
+  grid-row: 2/3;
+}
+.img2 {
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+.img3 {
+  grid-column: 7/11;
+  grid-row: 6/7;
+}
 @media screen and (max-width: 900px) {
   #hero,
   .home-grid {
@@ -241,5 +318,35 @@ main section img {
   }
   footer {
     margin-top: 25px;
+  }
+
+  /* Rivers CSS */
+  .rivers-title {
+    color: #154467;
+    padding-bottom: 75px;
+    font-size: 40px;
+  }
+  .rivers {
+    grid-template-rows: repeat(5, auto);
+  }
+  .river1,
+  .river2,
+  .river3 {
+    grid-column: 2/10;
+  }
+  .img1,
+  .img2,
+  .img3 {
+    max-width: 100%;
+    grid-column: 2/10;
+  }
+  .img1 {
+    grid-row: 3/4;
+  }
+  .img2 {
+    grid-row: 5/6;
+  }
+  .img3 {
+    grid-row: 7/8;
   }
 }
