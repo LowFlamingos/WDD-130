@@ -96,3 +96,34 @@ footer p {
 footer p a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 900px) {
+  main {
+    display: block;
+    height: auto;
+  }
+  header a {
+    display: block;
+    margin: auto;
+  }
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+  .home-title {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+  .music-card,
+  .sw-card {
+    margin: 50px auto;
+    width: 75%;
+  }
+  footer {
+    margin-top: 25px;
+  }
+}
