@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap");
 body {
   margin: 0;
-}
-#content {
   max-width: 1600px;
   margin: 0;
   padding: 0;
@@ -40,8 +38,7 @@ nav a:hover {
 }
 
 /* Main Home CSS */
-
-main {
+.home-body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #461257;
@@ -72,6 +69,60 @@ main {
 .card-img:hover {
   opacity: 0.6;
   transform: scale(1.1);
+}
+
+/* Music CSS */
+.music-body {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: repeat(10, auto);
+  text-align: center;
+  color: #461257;
+}
+.music-title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 20px;
+  padding: 30px;
+}
+.music-body p {
+  font-size: 17px;
+}
+.music-text1 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: #cecece;
+  line-height: 1.5em;
+  padding: 0px 30px;
+  box-shadow: 5px 5px 10px #7f7781;
+  border-radius: 25px;
+}
+.music-text2 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  background-color: #cecece;
+  line-height: 1.5em;
+  padding: 0px 30px;
+  box-shadow: 5px 5px 10px #7f7781;
+  border-radius: 25px;
+}
+.guitar-img,
+.keyboard-img {
+  grid-column: 2/3;
+  margin: auto;
+  border-radius: 4vw;
+  box-shadow: 5px 5px 10px #7f7781;
+}
+.guitar-img {
+  max-width: 50vw;
+  grid-row: 2/3;
+  margin-bottom: 25px;
+}
+.keyboard-img {
+  max-width: 35vw;
+  grid-row: 5/6;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* Footer CSS */
@@ -125,5 +176,14 @@ footer p a:hover {
   }
   footer {
     margin-top: 25px;
+  }
+
+  /* Music */
+  .music-body {
+    grid-template-columns: 3vw 2fr 3vw;
+  }
+  .guitar-img,
+  .keyboard-img {
+    max-width: 100%;
   }
 }
