@@ -166,6 +166,11 @@ footer p a:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .home-body {
+    display: grid;
+    grid-template-columns: 3vw 2fr 3vw;
+    color: #461257;
+  }
   main {
     display: block;
     height: auto;
@@ -183,24 +188,28 @@ footer p a:hover {
     padding: 15px;
   }
   .home-title {
-    font-size: 25px;
+    font-size: 20px;
+    margin: 10px 50px;
     padding-bottom: 0;
   }
   .music-card,
   .sw-card {
-    margin: 50px auto;
-    width: 75%;
+    grid-column: 2/3;
+    margin: 10px auto;
+    width: 90%;
   }
   footer {
     margin-top: 25px;
   }
 
-  /* Music */
-  .music-body {
+  /* Subpage */
+  .subpage-body {
     grid-template-columns: 3vw 2fr 3vw;
   }
   .guitar-img,
-  .keyboard-img {
+  .keyboard-img,
+  .school-img,
+  .verizon-img {
     max-width: 100%;
   }
 }
